@@ -1,0 +1,378 @@
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>AUTA151 学生情報 試合ー更新 </title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="col-sm-4">
+                        <label style="font-size:17px; " for="">AUTB151</label>
+                    </div>
+                    <div class="col-sm-4">
+                        <label style="font-weight: bold;"> 学生情報 試合ー更新 </label>
+                    </div>
+                    <div class="col-sm-4">
+                       <label style="font-size:17px; "   id="processDate"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="error">
+            <div class="row">
+                <div class="col-sm-12">
+                    <img style="vertical-align: baseline" src="images/error.png">
+                <span style="color: red;"> <<< エラーメッセージ >>> </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="search">
+            <div class="row">
+                <form action="" class="form col-sm-12">
+                    <div class="formcontrol col-sm-12">
+                        <div class="row col-sm-12">
+                            <label style="    margin-left: -10px;width: 183px; height: 30px;" class="col-sm-2">機関</label>
+                            <div class="col-sm-2">
+                                <select tabindex="1" class="col-sm-2" maxlength="10" minlength="5" style="width: 318px;height: 30px;" >
+                                     <option value="">XX-ＮＮＮＮＮ</option>
+                                     <option value="">XX-ＮＮＮＮＮ</option>
+                                     <option value="">XX-ＮＮＮＮＮ</option>
+                                     <option value="">XX-ＮＮＮＮＮ</option>
+                        </select>            
+                            </div>
+                        </div>
+                        <div class="row col-sm-12">
+                            <label style="    margin-left: -10px;width: 183px; height: 30px;" class="col-sm-2">タイトル</label>
+                            <div class="col-sm-2">
+                                <input tabindex="2" id="SEQinput" style="width: 318px;" maxlength="20" class="col-sm-2" type="text" />
+                            </div>
+
+                        </div>
+                         
+                    </div>
+                    <div class="formbutton col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-6"></div>
+                            <div id="dsds" class="col-sm-6 padding-0">
+                                <div class="col-sm-3"></div>
+                                <div  class="col-sm-3 padding-1">
+                                    <input id="search" type="button"   tabindex="3" value="検索(S)" />
+                                </div>
+                                <div class="col-sm-3 padding-1">
+                                    <input id="resetSearch"  class="button"  tabindex="4"  type="reset" value="キャンセル(C)" />
+                                </div>
+                                <div class="col-sm-3 padding-1">
+                                    <input id="top" onclick="location.href='./AUTA312の画面.html'" type="button" tabindex="5" value="新規登録(N)" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="tableUpdate">
+            <div class="row">
+                <form id="" action="" class="form col-sm-12">
+                    <div class="navigation col-sm-12">
+                        <div class="row">
+                            <div id="navPage" class="col-sm-12">
+                                <label id="currentPage">1</label> /
+                                <label id="totalPage">5</label>
+                                <label style="font-weight: bold;">ページ</label>
+                                <div>
+                                    <input onclick="functionPre();" id="backlock" class="navibutton" type="button" value="" />
+                                </div>
+                               
+                                <div>
+                                    <input onclick="functionNext();" id="next" class="navibutton" type="button" value="" />
+                                </div>
+                                
+                                <label style="font-weight: bold;">ページ</label>
+                                <input id="goPage" type="text" value="1" style="width: 50px;" />
+                                <input id="sssss" onclick="functionGoPage();" type="button" value="表示" class="Japanbutton" />
+                               <!--  <label>表示件数</label>
+                                
+                                <select id="records" style="width: 50px">
+                                    <option value="10">10</option>
+                                    <option value="20">20</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                </select>
+                                
+                                <input id="表示" type="button" value="表示" class="Japanbutton" /> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mainTable col-sm-12">
+                        <div class="table-group">
+                            <table class="table table-striped table-bordered" id="datatable" data-page-length='1'>
+                                <thead>                                   
+                                    <tr>                                    
+                                        <th style="display: none;"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <td style="padding: 0px;" >
+                                            <div class="col-container">
+                                                
+                                             <div id ="trai" style="padding-left: 20px; padding-top: 3px;" class="col-sm-6" >
+
+                                                 <div class="row">
+                                                      <div id ="d"  class="col-xs-6 col-md-3">
+                                                         <label>名<span style="color: red">(*)</span></label>
+
+
+                                                      </div>
+                                                      <div  class="col-xs-6 col-md-8">
+                                                          <input tabindex="6"  maxlength="20" style="width: 89%;margin-left: -63px;" type="text" name="">
+                                                     </div>                                                
+                                                </div>
+                                                 <div class="row">
+                                                      <div id ="d"  class="col-xs-6 col-md-3">
+                                                        <label>姓<span style="color: red">(*)</span></label>
+                                                      </div>
+                                                      <div  class="col-xs-6 col-md-8">
+                                                          <input tabindex="7" maxlength="10" style="width: 89%;margin-left: -63px;" type="text" name="">
+                                                    </div>                                              
+                                                </div>
+                                                <div style="padding-top: 20px;">
+                                                <div class="row">
+                                                      <div id ="d" class="col-xs-6 col-md-3">
+                                                         <label>タイトル<span style="color: red">(*)</span></label>
+
+
+                                                      </div>
+                                                      <div  class="col-xs-6 col-md-8">
+                                                          <input tabindex="8" maxlength="20"  style="width: 89%;margin-left: -63px;" type="text" name="">
+                                                     </div>                                                
+                                                </div>
+                                                 <div class="row">
+                                                      <div id ="d"  class="col-xs-6 col-md-3">
+                                                        <label>機関<span style="color: red">(*)</span></label>
+                                                      </div>
+                                                      <div  class="col-xs-6 col-md-8">
+                                                          <input maxlength="10" minlength="5" style="width: 89%;margin-left: -63px;background-color: #DFDFDF;" readonly="true"  type="text" name="">
+                                                    </div>                                              
+                                                </div>
+                                                 <div class="row">
+                                                      <div id ="d" class="col-xs-6 col-md-3">
+                                                        <label>学生の数<span style="color: red">(*)</span></label>
+                                                      </div>
+                                                      <div  class="col-xs-6 col-md-8">
+                                                          <input maxlength="15" style="text-align: right;width: 89%;margin-left: -63px;background-color: #DFDFDF;"  readonly="true" type="text" name="">
+                                                    </div>                                              
+                                                </div>
+                                                </div>
+                                                    <div style="padding-top: 20px;">
+                                                <div class="row">
+                                                      <div id ="d"  class="col-xs-6 col-md-3">
+                                                         <label>電話番号<span style="color: red">(*)</span></label>
+
+
+                                                      </div>
+                                                      <div  class="col-xs-6 col-md-8">
+                                                          <input tabindex="9" maxlength="10"  style="text-align: right;width: 89%;margin-left: -63px;" type="text" name="">
+                                                     </div>                                                
+                                                </div>
+                                                 <div class="row">
+                                                      <div id ="d"  class="col-xs-6 col-md-3">
+                                                        <label>Eメール<span style="color: red">(*)</span></label>
+                                                      </div>
+                                                      <div  class="col-xs-6 col-md-8">
+                                                          <input tabindex="10" maxlength="30" style="width: 89%;margin-left: -63px;background-color: #DFDFDF;"  readonly="true" type="text" name="">
+                                                    </div>                                              
+                                                </div>
+                                                
+                                                </div>
+                                                    <div style="padding-top: 20px; padding-bottom: 5px;">
+                                                <div class="row">
+                                                      <div id ="d"  class="col-xs-6 col-md-3">
+                                                         <label>住所<span style="color: red">(*)</span></label>
+
+
+                                                      </div>
+                                                      <div  class="col-xs-6 col-md-8">
+                                                          <input tabindex="11" maxlength="10"  style="width: 89%;margin-left: -63px;" type="text" name="">
+                                                     </div>                                                
+                                                </div>
+                                                 <div class="row" style="padding-bottom: 3px;">
+                                                      <div id ="d"  class="col-xs-6 col-md-3">
+                                                        <label>国</label>
+                                                      </div>
+                                                      <div  class="col-xs-6 col-md-8">
+                                                        <select tabindex="12"  maxlength="20"  style="width: 89%;margin-left: -63px;height: 30px;" type="text" name="">
+                                                     
+                                                                     <option value=""></option>
+                                                                     <option value="">XXXXXXXXXXXXXXXXx</option>
+                                                                     <option value="">XXXXXXXXXXXXXXXX</option>
+                                                                     <option value="">XXXXXXXXXXXXXXXX</option>
+                                                        </select>
+                                                    </div>                                              
+                                                </div>
+                                                 <div class="row" style="padding-bottom: 3px;">
+                                                      <div id ="d"  class="col-xs-6 col-md-3">
+                                                        <label>状態<span style="color: red">(*)</span></label>
+                                                      </div>
+                                                      <div  class="col-xs-6 col-md-8">
+                                                        <select tabindex="13"  maxlength="10"   style="width: 89%;margin-left: -63px;height: 30px;" >
+                                                                     <option value=""></option>
+                                                                     <option value="">XXXXXXXXXXXXXXXXx</option>
+                                                                     <option value="">XXXXXXXXXXXXXXXX</option>
+                                                                     <option value="">XXXXXXXXXXXXXXXX</option>
+                                                        </select>
+                                                    </div>                                              
+                                                </div>
+                                                <div class="row">
+                                                      <div id ="d"  class="col-xs-6 col-md-3">
+                                                        <label>郵便番号</label>
+                                                      </div>
+                                                      <div  class="col-xs-6 col-md-8">
+                                                          <input tabindex="14" maxlength="30"  style="width: 89%;margin-left: -63px;" type="text" name="">
+                                                    </div>                                              
+                                                </div>
+                                                <div class="row">
+                                                      <div id ="d"  class="col-xs-6 col-md-3">
+                                                        <label>都市</label>
+                                                      </div>
+                                                      <div  class="col-xs-6 col-md-8">
+                                                        <select  tabindex="15" maxlength="20"   style="width: 89%;margin-left: -63px;height: 30px;" >
+                                                                     <option value=""></option>
+                                                                     <option value="">XXXXXXXXXXXXXXXXx</option>
+                                                                     <option value="">XXXXXXXXXXXXXXXX</option>
+                                                                     <option value="">XXXXXXXXXXXXXXXX</option>
+                                                        </select>
+                                                         <!--  <input style="width: 89%;margin-left: -63px;" type="text" name=""> -->
+                                                    </div>                                              
+                                                </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6" style="padding-left: 20px; padding-top: 3px;" >
+                                                   <div id="left" class="row">  
+                                                        <label tabindex="16" >現在のシステム</label>
+                                                         <select tabindex="20" maxlength="15" >
+                                                                     <option value=""></option>
+                                                                     <option value="">XXXXXXXXXXXXXXXXx</option>
+                                                                     <option value="">XXXXXXXXXXXXXXXX</option>
+                                                                     <option value="">XXXXXXXXXXXXXXXX</option>
+                                                        </select>
+                                                        
+                                                                                            
+                                                </div>
+                                                 <div id="left" class="row" style="margin-top: -3px;">  
+                                                        <label tabindex="17" >購入の時間枠</label>
+                                                       <select tabindex="21"  maxlength="20">
+                                                                     <option value=""></option>
+                                                                     <option value="">XXXXXXXXXXXXXXXXx</option>
+                                                                     <option value="">XXXXXXXXXXXXXXXX</option>
+                                                                     <option value="">XXXXXXXXXXXXXXXX</option>
+                                                        </select>
+                                                                                            
+                                                </div>
+                                                 <div id="left" class="row" style="padding-top: 20px;">  
+                                                        <label tabindex="18" >どこで知りま</label>
+                                                        <input tabindex="22" maxlength="20"  type="text" name="">
+                                                                                            
+                                                </div>
+                                                <div  id="left" class="row" style="padding-top: 30px;">  
+                                                        <label tabindex="19" > コメントや質問</label>
+                                                        <input style="visibility: hidden;" type="text" name="">
+                                                                                      
+                                                </div>
+                                                 <div class="" style="padding-top: 18px;padding-left: 11.5%;">  
+                                                       <textarea tabindex="23" id="textarea" style="float: left" rows="11" cols="61">
+                                                       </textarea>                                                                                                          
+                                           </div>
+                                                                        
+                                                </div>
+                                             
+                             
+                                                </div>
+                                            </div> 
+                                                                                        
+                                          
+                                            </div>
+                                         
+                                        </td>
+                
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <!-- <input maxlength="1" tabindex="6" style="width: 40px;" type="text" value="" name=""> -->
+                                        </td>
+                                      <!--   <td>
+                                            <input maxlength="2" disabled="true" class="col-sm-12" type="text" value="" name="">
+                                        
+                                        </td>
+                                        <td>
+                                            <input maxlength="10" class="col-sm-12" type="text" value="" name="">
+                                         
+                                        </td>
+                                        
+                                        <td style="display: none;"></td>
+                                        <td style="display: none;"></td>
+                                        <td style="display: none;"></td>
+                                        <td style="display: none;"></td>
+                                        <td style="display: none;"></td>
+                                        <td style="display: none;"></td> -->
+                                    </tr>
+                                    
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="formbutton col-sm-12 updateButton">
+                        <div class="row">
+                            <div class="col-lg-6">
+                               
+                            </div>
+                            <div id="dsds" class="col-lg-6 padding-0">
+                                <div class="col-lg-3 padding-0">
+                                      <input type="button" tabindex="24"  value="更新(U)" />
+                                </div>
+                                <div class="col-lg-3 padding-0">
+                                    <input type="button" tabindex="25"  value="削除(D)" />
+                                </div>
+                                <div class="col-lg-3 padding-0">
+                                    <input  type="reset" tabindex="26" id="reset1"  value="クリアー(R)" />
+                                </div>
+                                <div class="col-lg-3 padding-0">
+                                    <input  type="button" tabindex="27" value="エクスポート(E)" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- DataTables JavaScript -->
+<script src="js/jquery.dataTables.min.js"></script>
+<script src="js/dataTables.bootstrap.min.js"></script>
+<script src="js/dataTables.responsive.js"></script>
+<script type="text/javascript" src="js/paginate.js"></script>
+<script type="text/javascript">
+    var dateObj = new Date();
+    var month = ('0' + (dateObj.getMonth() + 1)).slice(-2);
+    var date = ('0' + dateObj.getDate()).slice(-2);
+    var year = dateObj.getFullYear();
+    newdate = year + "年" + month + "月" + date + "日";
+    document.getElementById("processDate").innerHTML = newdate
+
+ 
+</script>
+</html>

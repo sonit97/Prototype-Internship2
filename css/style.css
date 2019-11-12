@@ -1,0 +1,422 @@
+body {
+	font-family: ＭＳ ゴシック;
+}
+
+.padding-0{
+	padding-right:2;
+	padding-left:2;
+}
+
+.padding-1{
+	padding-right:1;
+	padding-left:1;
+}
+
+.wrapper{
+	padding-top: 4px;
+	padding-bottom: 30px;
+	border: 5px solid #1a75c6;
+	background-color: #C4D6EA;
+
+	padding-right: 4px;
+    padding-left: 4px;
+    margin-right: auto;
+    margin-left: auto;
+/*	font-family: "ＭＳ ゴシック",sans-serif;*/
+	font-size: 15px;
+	margin-top: 20px;
+}
+.header{
+	padding-top: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	border: 2px solid #84b3d1;
+	font-size: 1.2em;
+	color: #1874c5;
+}
+
+.error{
+	display: block;
+	margin-top: 5px;
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	border: 3px solid red;
+	font-size: 1.2em;
+	color: black;
+	background-color: #FFFFFF;
+}
+
+.header div div:nth-child(1){
+	padding-right:8;
+	padding-left:8;
+}
+
+.header div:nth-child(2){
+	text-align: center;
+}
+
+.header div:nth-child(2) label{
+	font-weight: bold;
+	font-size: 23px;
+}
+
+.header div:nth-child(3){
+	text-align: right;
+}
+
+.header div div:nth-child(3){
+	padding-right:8;
+	padding-left:8;
+}
+
+.header label{
+	margin-top: 10px;
+	font-weight: normal;	
+}
+
+.title{
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.search .row label {
+	margin-right: 5px;
+	min-width: 15%
+}
+
+#demoinput, #SEQinput {
+	min-width: 80px;
+}
+
+#Ã£Æ’Â¡Ã£Æ’Â¼Ã£â€šÂ«Ã£Æ’Â¼input {
+	min-width: 160px;
+	font-size: 20px;
+}
+
+#SSinput {
+	min-width: 40px;
+}
+
+.formcontrol{
+	margin-top: 4px;
+	padding-top : 7px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: white;
+	border: 2px solid #84b3d1;
+}
+
+.form .Japanbutton{
+	border: 1px solid #579dfa;
+	background: linear-gradient(to bottom, #c4d6ea 50%, #c4d6ea 50%, white 105%);
+	color: #1874c5;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.form .Japanbutton:hover{
+
+	background: #1A75C6;
+	color: white;
+} 
+
+.form input {
+	padding-right:0;
+	padding-left:0;
+	font-size: 20px;
+} 
+
+#datatable {
+	margin-bottom: 12px;
+	width: 100%;
+	border: 2px solid #1874c5;
+}
+
+#datatable td {
+	border: 2px solid #84b3d1;
+	text-align: center;
+}
+
+#datatable td select{
+	font-size: 20px;
+}
+
+#datatable td span{
+	padding: 0px;
+}
+
+#datatable tr td:nth-child(2) input {
+	width: 22%;
+}
+
+#datatable th {
+	border: 2px solid #84b3d1;
+	text-align: center;
+}
+
+#datatable th, #datatable td {
+	vertical-align: middle;
+}
+
+#datatable th label{
+	margin-bottom: 0px;
+}
+
+table input{
+	padding-right:0;
+	padding-left:0;
+} 
+
+td input:nth-child(1){
+	margin-bottom: 2px;
+}
+
+.form .formcontrol .row div{
+	padding-right:0;
+	padding-left:0;
+} 
+
+#1 {
+	width: 7.5%;
+	text-decoration: underline;
+}
+
+.formbutton .row div{
+	padding-right:1.5;
+	padding-left:1.5;
+}
+
+
+select{
+	margin: 0;
+	height: 35px;
+	border: 1px solid #5488bd;
+	/*-webkit-appearance: none;*/
+	background: white; /*url(images/icon-select.jpg) no-repeat right;*/
+}
+
+label{
+	font-weight: normal;
+	font-size: 1.2em;
+}
+
+.formcontrol label{
+	background-color: #1a75c6;
+	margin: 0;
+	color: white;
+	padding-left: 10px;
+	padding-bottom: 3px;
+	height: 35px;
+    line-height: 35px;
+}
+
+.formcontrol .row{
+	margin-bottom: 5px;
+}
+
+input {
+	height: 35px;
+	border: 1px solid #5488bd;
+}
+
+.formbutton{
+	padding-top : 7px;
+	padding-bottom: 12px;
+	padding-right: 15px;
+	padding-left: 15px;
+	
+}
+
+.formbutton input[type=button],[type=reset],[type=submit]{
+	width: 100%;
+	border: 1px solid #579dfa;
+	font-size: 1.2em;
+	background: linear-gradient(to bottom, #c4d6ea 50%, #c4d6ea 50%, white 105%);
+	color: #1874c5;
+}
+
+.formbutton input:hover{
+
+	background: #1A75C6;
+	color: white;
+} 
+#reset1:hover{
+
+	background: #1A75C6;
+	color: white;
+} 
+
+#reset1{
+width: 100%;
+    border: 1px solid #579dfa;
+    font-size: 1.2em;
+    background: linear-gradient(to bottom, #c4d6ea 50%, #c4d6ea 50%, white 105%);
+    color: #1874c5;
+}
+
+.button {
+	width: 100%;
+	border: 1px solid #579dfa;
+	font-size: 1.2em;
+	background: linear-gradient(to bottom, #c4d6ea 50%, #c4d6ea 50%, white 105%);
+	color: #1874c5;
+}
+
+.navigation {
+	padding-left: 10px;
+	border-top: 2px solid #579dfa;
+	border-left: 2px solid #579dfa;
+	border-right: 2px solid #579dfa;
+	color:white;
+	background: linear-gradient(to bottom, #5bd0ef 2%, #1e7cbb 100%, #5dc2dd 100%);
+	font-size: 1.2em;
+}
+
+.navigation .navibutton{
+	color:black;	
+}
+
+.navigation input[type=text]{
+	color:black;
+}
+
+.navigation select{
+	color:black;
+}
+
+.form .mainTable{
+	padding-right:0;
+	padding-left:0;
+}
+
+.mainTable th{
+	background-color: #1A75C6;
+	color: white;
+}
+
+.mainTable .num{
+	text-align: right;
+}
+
+
+.mainTable .dtType{
+	width: 100px;
+}
+
+.mainTable .dtType input{
+	width: 50px;
+}
+
+.mainTable .dtcode{
+	width: 250px;
+}
+
+.mainTable .dtname input{
+	width: 95%;
+}
+
+th td {
+	text-align: center;
+}
+
+
+th {
+	font-weight: bold;
+}
+.updateButton {
+	padding-top: 0px; 
+}
+
+.updateButton span {
+	font-weight: bold;
+	font-size: 17px;
+	height: 35px;
+	line-height: 35px;
+}
+
+.table-striped>tbody>tr:nth-child(even) {
+    background-color: #E1EFFC;
+} 
+
+#next {
+	background: url('../images/next.png') no-repeat;
+	vertical-align: middle;
+	width: 40px;
+	height: 40px;
+} 
+
+#backlock {
+	background: url('../images/backlock.png') no-repeat;
+	vertical-align: middle;
+	width: 40px;
+	height: 40px;
+} 
+
+#navPage {
+	padding-top: 2px;
+}
+
+#navPage div{
+	display: inline; 
+	height: 30px;
+}
+.col-container {
+    display: table;
+    width: 100%;
+}
+.col {
+    display: table-cell;
+    padding: 16px;
+}
+input {
+	height: 30px;
+
+	border-radius: 1px;
+}
+#d{
+	background-color: #1A75C6;
+	width: 30%;
+	height: 30px;
+	text-align: left;
+    color: white;
+}
+#left label {
+	background-color: #1A75C6;
+	width: 30%;margin-left: 9%;
+	height: 30px;
+	text-align: left;
+	color: #FFFFFF;
+	padding-left: 10px;
+}
+#left input {
+	width: 100%;
+	margin-left: -24px;
+	width: 55%; 
+	float: right;
+	margin-right: 4px;
+}
+
+
+#trai label {
+	padding-left: 0px;
+	text-align: left;
+	color: #FFFFFF;
+}
+#left select {
+	width: 100%;
+	margin-left: -24px;
+	width: 55%; 
+	float: right;
+	margin-right: 4px;
+	height: 30px;
+}
+#dsds input:active{
+	font-weight: bold;
+}
+#sssss:active{
+	font-weight: bold;
+}
